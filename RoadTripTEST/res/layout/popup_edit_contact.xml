@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+	android:padding="10dp"
+	android:background="@color/background">
+
+    <EditText
+        android:id="@+id/text_popup_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="@string/name" >
+    <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/text_popup_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+		android:layout_below="@+id/text_popup_name"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email" />
+    
+    <EditText
+        android:id="@+id/text_popup_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_popup_email"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone" 
+        android:hint="@string/phone" />
+
+    <Button
+        android:id="@+id/button_popup_contact_ok"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_popup_phone"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ok" 
+        android:background="@drawable/custom_button" />
+
+</RelativeLayout>
